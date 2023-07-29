@@ -15,6 +15,9 @@ const Navbar = (props: Props) => {
     >
       <div className="font-bold text-lg">Estronda Boost</div>
       <div className="flex-grow"></div>
+      <button className="bg-indigo-900 text-white font-semibold px-4 py-2 rounded hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-900 focus:ring-opacity-50">
+        Login
+      </button>
       <button className="md:hidden" onClick={props.onMenuButtonClick}>
         <Bars3Icon className="h-6 w-6" />
       </button>

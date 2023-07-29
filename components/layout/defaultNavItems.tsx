@@ -14,8 +14,8 @@ export const defaultNavItems: NavItem[] = [
     icon: <HomeIcon className="w-6 h-6" />,
   },
   {
-    label: "Team",
-    href: "/team",
+    label: "Boosters",
+    href: "/booster",
     icon: <UserGroupIcon className="w-6 h-6" />,
   },
   {
