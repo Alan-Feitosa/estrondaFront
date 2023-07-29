@@ -1,14 +1,19 @@
+import dynamic from "next/dynamic";
+import BoosterCard from "components/home/cards/BoosterCard";
 import { NextPage } from "next";
 import React from "react";
+
+const BoosterChart = dynamic (import ("components/home/charts/BoosterChart"), {ssr: false});
 
 const HomePage: NextPage = () => {
   return (
     <div className="container">
-      <div className="grid place-content-center min-h-screen">
-        <div className="flex flex-col items-center gap-4">
-          <h1 className="text-4xl my-8">Welcome to Talwind Sidebar Tutorial</h1>
-        </div>
+      <p className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 font-bold text-xl mb-2">Bem Vindo!</p>
+      <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+        <BoosterCard></BoosterCard>
+        <BoosterCard></BoosterCard>
       </div>
+      <BoosterChart></BoosterChart>
     </div>
   );
 };
